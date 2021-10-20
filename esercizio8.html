@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Registrazione alla piattaforma</title>
+    </head>
+
+    <body>
+        <h3>Registrazione</h3>
+        <form action="#" method="get">
+            <section>
+                <fieldset>
+                    <legend><strong>Credenziali</strong></legend>
+                    <label for="email">Email</label><br>
+                    <input required type="email" name="email" id="email"><br>
+                    <label for="password">Password</label><br>
+                    <input required type="password" name="password" id="password">
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Dati anagrafici</strong></legend>
+                    <label for="nome">Nome</label><br>
+                    <input required type="text" name="nome" id="nome"><br>
+                    <label for="cognome">Cognome</label><br>
+                    <input required type="text" name="cognome" id="cognome"><br>
+                    <label for="data_nascita">Data di nascita</label><br>
+                    <input required type="data" name="data di nascita" id="data_nascita"><br>
+                    <label for="telefono">Telefono</label><br>
+                    <input required type="number" name="telefono" id="telefono">
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Piano di abbonamento</strong></legend>
+                    <label for="abbonamento">Tipo di abbonamento </label>
+                    <select name="abbonamento" id="abbonamento">
+                        <option value="Free">Free</option>
+                        <option value="bronzo">Bronzo: 4,99€/mese</option>
+                        <option value="argento">Argento: 9,99€/mese</option>
+                        <option value="oro">Oro: 14,99€/mese</option>
+                    </select><br>
+                    <label for="pro"> Piano PRO</label>
+                    <input type="checkbox" name="pro" id="pro">
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Dati di fatturazione</strong></legend>
+                    <label for="numero_carta">Numero della carta di credito </label><br>
+                    <input required type="number" name="numero_carta" id="numero_carta" pattern="[0-9]{16}"
+                        maxlength="16"><br>
+                    <label for="cvc">CVC</label><br>
+                    <input required type="number" name="cvc" id="cvc" pattern="[0-9]{3}" maxlength="3"><br>
+                    <label for="scadenza">Scadenza carta </label><br>
+                    <input required type="date" name="scadenza" id="scadenza"><br>
+                    <label for="indirizzo">Indirizzo di fatturazione </label><br>
+                    <input required type="text" name="indirizzo" id="indirizzo"><br>
+                </fieldset>
+            </section>
+            <section>
+                <button type="submit">Registrati</button>
+            </section>
+        </form>
+    </body>
+
+</html>
